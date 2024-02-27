@@ -1,0 +1,8 @@
+.table-footer {
+  width: 100%;
+  border: 1px solid gray;
+  min-height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30px;
+}

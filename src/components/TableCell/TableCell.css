@@ -1,0 +1,18 @@
+.table-cell {
+  width: 25%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-right: 1px solid gray;
+}
+
+.table-cell:last-child {
+  border-right: unset;
+}
+
+.table-cell__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+}

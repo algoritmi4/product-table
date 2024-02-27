@@ -1,0 +1,7 @@
+.table-row {
+  width: 100%;
+  border: 1px solid gray;
+  border-top: transparent;
+  min-height: 70px;
+  display: flex;
+}

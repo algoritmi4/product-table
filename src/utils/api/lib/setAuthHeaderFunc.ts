@@ -3,7 +3,7 @@ import md5 from "md5";
 // env const in future
 const password = "Valantis";
 
-export const getmd5Header = () => {
+export const setAuthHeader = () => {
   const date = new Date();
   const currentMonth = date.getUTCMonth() + 1;
   const currentDay = date.getUTCDate();
