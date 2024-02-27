@@ -1,6 +1,6 @@
 import { baseApi } from '../../utils/api/baseApi';
-import { useAppDispatch, useAppSelector } from '../../utils/api/hooks';
-import { useGetRows } from '../../utils/api/lib/useGetRows';
+import { useAppDispatch, useAppSelector } from '../../utils/hooks/redux-hooks';
+import { useGetRows } from '../../utils/hooks/useGetRows';
 import { ROWS_PER_PAGE } from '../../utils/model/constants';
 import { IFilterValues, IRow } from '../../utils/model/types';
 import { pageNumberSetted } from '../../utils/slices/paginationSlice';

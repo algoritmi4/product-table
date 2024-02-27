@@ -1,8 +1,8 @@
-import { IGetItemsByIdsParams, IGetRowsParams } from "../../model/types";
-import { preloaderStateSetted } from "../../slices/preloaderStateSlice";
-import { tableRowsAdded, tableRowsSetted } from "../../slices/tableSlice";
-import { baseApi } from "../baseApi";
-import { useAppDispatch } from "../hooks";
+import { IGetItemsByIdsParams, IGetRowsParams } from "../model/types";
+import { preloaderStateSetted } from "../slices/preloaderStateSlice";
+import { tableRowsAdded, tableRowsSetted } from "../slices/tableSlice";
+import { baseApi } from "../api/baseApi";
+import { useAppDispatch } from "./redux-hooks";
 
 export function useGetRows() {
   const dispatch = useAppDispatch();

@@ -1,14 +1,14 @@
-import { useEffect } from 'react';
+import { ReactElement, useEffect } from 'react';
 import TableFooter from '../TableFooter/TableFooter';
 import TableHeader from '../TableHeader/TableHeader';
 import TableRow from '../TableRow/TableRow';
 import './App.css';
-import { useAppSelector } from '../../utils/api/hooks';
+import { useAppSelector } from '../../utils/hooks/redux-hooks';
 import { ROWS_PER_PAGE } from '../../utils/model/constants';
-import { useGetRows } from '../../utils/api/lib/useGetRows';
+import { useGetRows } from '../../utils/hooks/useGetRows';
 import Preloader from '../Preloader/Preloader';
 
-function App() {
+function App(): ReactElement {
   const { rows, length, isFiltered } = useAppSelector((state) => state.table);
   const { page } = useAppSelector((state) => state.pagination);
   const { isPreloaderActive } = useAppSelector((state) => state.preloaderState);

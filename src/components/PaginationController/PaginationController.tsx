@@ -1,4 +1,4 @@
-import { useAppDispatch, useAppSelector } from '../../utils/api/hooks';
+import { useAppDispatch, useAppSelector } from '../../utils/hooks/redux-hooks';
 import { ROWS_PER_PAGE } from '../../utils/model/constants';
 import { nextPageSetted, prevPageSetted } from '../../utils/slices/paginationSlice';
 import './PaginationController.css';

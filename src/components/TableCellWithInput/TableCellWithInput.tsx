@@ -1,7 +1,7 @@
 import { useDebounce } from 'use-debounce';
 import './TableCellWithInput.css';
 import { ChangeEvent, ReactElement, useEffect, useState } from "react";
-import { useAppDispatch, useAppSelector } from '../../utils/api/hooks';
+import { useAppDispatch, useAppSelector } from '../../utils/hooks/redux-hooks';
 import { debouncedValueSetted } from '../../utils/slices/debouncedInputValuesSlice';
 import { INPUT_DEBOUNCE_TIME } from '../../utils/model/constants';
 

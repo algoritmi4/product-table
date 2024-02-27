@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface IAction {
+interface IInputInfo {
   inputName: string;
   value: string;
 }
@@ -15,7 +15,7 @@ const debouncedInputValuesSlice = createSlice({
   name: 'debouncedInputValues',
   initialState,
   reducers: {
-    debouncedValueSetted: (state, { payload: inputInfo }: { payload: IAction }) => ({
+    debouncedValueSetted: (state, { payload: inputInfo }: { payload: IInputInfo }) => ({
       ...state, [inputInfo.inputName]: inputInfo.value
     })
   }
